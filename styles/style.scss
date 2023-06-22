@@ -1,0 +1,457 @@
+@import 'variables';
+@import 'buttons';
+@import 'nav-footer';
+@import 'forms';
+@import 'mixin';
+
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body,
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; 
+    width:100vw;
+}
+
+h1,h3{
+    font-family:$primaryFont;
+    margin-bottom:15px;
+}
+p{
+    font-family: $secondaryFont;
+}
+
+
+a{
+    text-decoration: none!important;
+}
+
+
+//  Home page style
+
+.hero{
+    color:$primaryColor;
+    line-height: 40px;
+    height:50vh;
+    background-image: url("../images/hero-home.png");
+    background-position:10% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+.hero-container{
+    max-width: 600px;
+    display:block;
+    margin-top: 80px;
+    margin-left: 100px;
+    padding: 0 30px;
+
+    button{
+        margin-top: 30px;
+        font-weight:400;
+        
+    }
+}
+
+.home-intro, .member{
+    background-color: $primaryColor;
+    text-align: center;
+    padding: 30px 0;
+
+    h1{
+        color: $green;
+    }
+    p{
+        color: $secondaryColor;
+        line-height: 30px;}
+   
+}
+
+.member{
+    padding-top:0;
+}
+
+.contact{
+    @include backGround($scondaryColor);
+    
+    padding:50px 0;
+    h1{
+       text-align: center;
+       color: $primaryColor;
+       margin-bottom: 60px;
+    }
+    p{
+    color: $primaryColor;}
+    .contact-left, .contact-right{
+        text-align: left;
+        width:500px;
+        line-height: 25px;
+    }
+    h3{
+        color: $primaryColor;
+        
+    }
+    p{
+        padding-bottom: 30px;
+    }
+}
+
+.home-intro img{
+    max-width: 50%;
+    margin:30px;
+    border-radius:15px;
+}
+
+.text-wrapper{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.cards{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cards-top, .cards-bottom{
+display:flex ;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+
+
+.card{
+background-color: #BEA48A;
+width:300px;
+border-radius: 15px;
+margin: 40px 0;
+padding:30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+p{
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 200px;
+}
+
+
+
+hr{
+    width:50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+   
+
+}
+a{
+    color: $primaryColor;
+}
+}
+
+// Our work page style
+
+.title{
+    width: 100vw;
+    background-image: url('../images/ourwork.png');
+    background-position:10% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+    
+  
+  
+
+    .title-container{
+        width: 70%;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+
+      h1, p{
+        color:$secondaryColor;
+      }
+    
+    }
+
+}
+
+.work-intro{
+    @include backGround($primaryColor);
+    
+    
+}
+
+    .intro-container{
+        width: 70%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: $secondaryColor;
+
+    }
+
+.ul{
+        font-family:$secondaryFont;
+        line-height: 2em;
+       
+
+    
+
+    .li{
+        font-family:$secondaryFont;
+        list-style: circle;
+        
+    }
+   
+}
+
+.intro-list{
+    font-family:$secondaryFont;
+    line-height: 2em;
+
+}
+
+.works{
+    background-color: $primaryColor;
+    .works-container{
+    display:block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+  img{
+   width: 350px;
+    border-radius: 10px;
+    
+}
+}
+}
+
+
+// card style
+.soil4climate, .orgarnic-cert, .magazine, .events{
+    @include backGround($secondaryColor);
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.disc{
+    margin-left: 50px;
+
+    p{
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
+
+.contact-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    
+}
+.card a{
+    color: $secondaryColor;
+    font-family: $secondaryFont;
+}
+
+
+   
+
+
+
+  @media screen and(max-width:768px){
+    .intro-container h1{
+        text-align: center;
+    }
+    .intro-list{
+        text-align: justify;
+    }
+    .soil4climate, .orgarnic-cert, .magazine, .events{
+       display:block;
+       justify-content: center;
+       align-items: center;
+    }
+       
+    .disc{
+       margin:30px 0;
+       text-align: center;
+       width:300px;
+       margin: 0 auto;
+
+    }
+
+   
+    .works img{
+        margin: 0 auto;
+        width:270px;
+    }
+    .works .works-container img {
+        width: 297px;}
+
+    .cards-top, .cards-bottom{
+       justify-content: center;
+    }
+
+    .s4c-img, .orgarnic-cert,.magazine, .events{
+        // margin:0 auto;
+        text-align: center;
+    }
+
+   }
+    
+
+
+//   Support page style
+
+.support{
+    background-image: url("../images/support.png");
+}
+  .donation-form{
+    @include backGround($primaryColor);
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+  padding-bottom: 5em;
+    
+
+  }
+  h3{
+    color: $secondaryColor;
+  }
+  .leaf{
+    width: 100px;
+  }
+
+  .options{
+    @include backGround($primaryColor);
+    @include blockStart();
+
+
+  }
+
+  .options-top, .options-bottom{
+    width:70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+
+  }
+
+.option {
+    width:200px;
+    background-color: #fff;
+    text-align: center;
+    font-size: $secondaryFont;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+    h3{
+      padding:20px 30px; 
+    background-color:#BEA48A ;
+    font-size: 1em;
+    font-family: $secondaryFont;
+    color: $secondaryColor;
+}
+    p{
+        padding:15px 20px; 
+    }
+    button{
+       margin-bottom: 20px;
+
+    }
+
+  
+}
+
+
+
+@media screen and(max-width:768px){
+   
+    .options-top, .options-bottom{
+        display: block;
+        margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+    .option{
+        // margin-top: 40px;
+        margin-bottom: 40px;
+    }
+   }
+
+}
+
+// Membership styles
+
+
+.membership{
+    background-image: url("../images/membership.png");
+}
+.m-options, .p-methods{
+    @include backGround($primaryColor);
+    h1{
+        color: $green;
+    }
+
+}
+
+.m-form-wrapper{
+    width:70%;
+    display: block;
+   justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    h1{
+    color: $green;}
+
+    .details{
+        margin: 0; 
+
+        label{
+            font-family: $secondaryFont;
+            font-size: 18px;
+        }
+        p{
+            padding-left: 20px;
+        }
+      
+    }
+}
+
+
+@media screen and(max-width:768px){
+    .m-form-wrapper{
+        text-align: left;
+        .details{
+            width:100%;
+            margin: 0 auto; 
+        }
+    }
+    
+    
+
+}
+
+}

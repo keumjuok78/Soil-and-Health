@@ -1,0 +1,10 @@
+@mixin blockStart{
+    display: block;
+    justify-self: flex-start;
+    align-items: center;
+}
+
+@mixin backGround($backgroun){
+    width:100%;
+    background-color: $background;
+}

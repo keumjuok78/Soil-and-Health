@@ -1,0 +1,41 @@
+%btn{
+    display: inline-block;
+    border-radius: 5px;
+    padding:8px 20px;
+   margin: 3px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   font-size: 20px;
+   cursor: pointer;
+
+   &:hover{
+    transform: scale(.98);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   }
+}
+
+.primary-button{
+    @extend %btn;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+   
+
+    &:hover{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+    }
+
+}
+
+.secondary-button{
+    @extend %btn;
+    background-color: $green;
+    color: $primaryColor;
+    
+
+    &:hover{
+      background-color: $primaryColor;
+      color: $green; 
+    }
+
+}
+

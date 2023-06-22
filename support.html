@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Soil&Health Association</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+          <a href="./index.html"><img class="logo1" src="images/logo1.png" alt="s&hlogo" /></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="ourwork.html">Our Work</a>
+            </li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li class="login">
+              <div>
+                <img
+                  class="account"
+                  src="images/user-regular.svg"
+                  alt="account"
+                />
+              </div>
+              <p>Log In</p>
+            </li>
+          </ul>
+        </nav>
+  
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      <section class="title support">
+        <div class="title-container">
+            <h1>Support Us</h1>
+            <p>Healthy soils lead to healthy food, healthy people and a healthy planet. 
+                Organic regenerative agriculture is a vital tool in building a climate friendly future that protects nature, and our own wellbeing. </p>
+        </div>
+      </section>
+      <section class="home-intro" >
+        <div class="text-wrapper">
+        <h1>Help us help others.</h1>
+        <p>A donation to our 2022 Annual Appeal will support a new generation focused on healthy food production.
+            Our 2022 Annual Appeal is focused on developing our advocacy role and ability to support groups with shared goals but who lack the infrastructure and systems of a mature organisation. Many of these groups are young people, passionate about their local land and determined to feed their families on healthy food.
+            </p>
+          <img src=".//images/support.jpg" alt="support">
+        
+        <h1>Donate to keep Soil & Health strong.</h1>
+         <img class="leaf" src="./images/leaf.png" alt="leaf"> 
+         <h3>Give by internet banking.</h3>  
+         <p>You can transfer your donation directly to the following bank account. 
+            If you include your name in the transaction and drop us a line, we can make sure you receive a receipt, 
+            email us at info@organicnz.org.nz.<br>
+            
+            BNZ Account number: 02 0108 0058415 001
+            Account name: Soil & Health Association
+            </p>
+            <img class="leaf" src="./images/leaf.png" alt="leaf"> 
+            <h3>or give by credit card.</h3>
+        </div>
+    
+    </section>
+    <section class="options">
+        <div class="options-top">
+            <div class="option">
+                <h3>$200</h3>
+                <p>$200 will help us promote community events and actions.</p>
+                <button class="secondary-button">Confirm</button>
+            </div>
+            <div class="option">
+                <h3>$500</h3>
+                <p>$500 will support webinars and educational <br>events.</p>
+                <button class="secondary-button">Confirm</button>
+            </div>
+            <div class="option">
+                <h3>$1000</h3>
+                <p>$1000 will fund development work with emerging leaders.<br></p>
+                <button class="secondary-button">Confirm</button>
+            </div>
+        </div>
+        <div class="options-bottom">
+            <div class="option">
+                <h3>$200</h3>
+                <p>$200 will help us promote community events and actions.</p>
+                <button class="secondary-button">Confirm</button>
+            </div>
+            <div class="option">
+                <h3>$2000</h3>
+                <p>$2000 will support our professional campaign<br> work.
+                </p>
+                <button class="secondary-button">Confirm</button>
+            </div>
+            <div class="option">
+                <h3>Choose amount</h3>
+                <p>We are grateful for whatever contribution you can make. </p>
+                <button class="secondary-button">Confirm</button>
+            </div>
+        </div>
+    </section>
+    <section class="home-intro">
+        <img class="leaf" src=".//images/leaf.png" alt="leaf">
+        <h3>Thank you!</h3>
+        <p>A receipt for your donation will be sent to your email address, within 7 business days. 
+            Thank you for your kind donation.</p>
+    </section>
+    <div class="donation-form">
+        <div class="details">
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="fname" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="email">E-mail</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your e-mail..">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="phone">Phone</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="address">Addredd</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="address" name="address" placeholder="Your address..">
+                    </div>
+                  </div>
+                  <br>
+                 <div class="row">
+                 <input type="submit" class="secondary-button" value="Submit">
+                 </div>
+               
+      
+
+                </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+        <div class="logo-footer">
+          <a href="./index.html"><img src=".//images/logo2.png" alt="logo2"></a>
+        </div>
+        <div class="footer-buttons">
+          <p>You can support our work</p>
+          <a href="./support.html" class="primary-button">Donate Now</a>
+
+          <!-- <a href="./support.html"><button class="primary-button">Donate Now</button></a> -->
+          <p>or join our membership</p>
+          <a href="./membership.html" class="primary-button">Join membership</a>
+
+          <!-- <a href="./membership.html"><button class="primary-button">Join Membership</button></a> -->
+        </div>
+        
+        <div class="social-media">
+          <p>Keep connected with us</p>
+          <div class="icons">
+            <a href="https://nz.linkedin.com/company/the-soil-health-association-of-new-zealand" target="_blank"><img src=".//images/linkedin.svg" alt="linkedin"></a>
+            <a href="https://twitter.com/soilhealthnz" target="_blank"><img src=".//images/twitter.svg" alt="twitter"></a>
+        </div>
+        </div>
+      </div>
+   
+      </footer>
+
+     
+
+      <script src="./script.js">
+  
+      </script>
+    </body>
+  </html>
